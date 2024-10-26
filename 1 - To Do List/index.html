@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1 id="mainHeader">Day 1 List</h1>
+    <div id="formAdd" class="card">
+      <div id="formAdd">
+        <h3 class="card-title">Add New</h3>
+        <form onsubmit="addTodo();return false" id="add" class="card-form">
+          <input id="addInput" type="text" />
+          <button class="add-button" type="submit">Add</button>
+        </form>
+      </div>
+      <hr />
+      <div id="cardParent"></div>
+      <a href="https://www.fathin.my.id"><h3 class="card-title" id="Made">Made By Fathin</h3></a>
+    </div>
+  </body>
+  <script src="script/main.js"></script>
+</html>

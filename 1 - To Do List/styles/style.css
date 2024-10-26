@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish:700|Ubuntu:400");
+
+:root {
+  --text: #050315;
+  --background: #f7f3fe;
+  --primary: #21bf73;
+  --secondary: #ff7f76;
+  --accent: #b0eacd;
+}
+
+body {
+  font-family: "Ubuntu";
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Mulish";
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+} /* 16px */
+
+h1 {
+  font-size: 4.21rem; /* 67.36px */
+}
+
+h2 {
+  font-size: 3.158rem; /* 50.56px */
+}
+
+h3 {
+  font-size: 2.369rem; /* 37.92px */
+}
+
+h4 {
+  font-size: 1.777rem; /* 28.48px */
+}
+
+h5 {
+  font-size: 1.333rem; /* 21.28px */
+}
+
+small {
+  font-size: 0.75rem; /* 12px */
+}
+
+body {
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../images/background.jpg");
+  background-color: #f7f3fe;
+  padding: 1vw;
+}
+
+button,
+input {
+  padding: 10px 20px 10px 20px;
+  font-size: large;
+  border-radius: 5px;
+  background-color: #f7f3fe;
+  border: 2px #c0bacb solid;
+}
+input {
+  width: 100%;
+  margin-right: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text)
+}
+
+hr {
+    border: 1px #dcd7e4 solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+  border: 2px #dcd7e4 solid;
+  border-radius: 12px;
+  padding: 15px;
+  width: 90%;
+  height: fit-content;
+}
+
+.card-title {
+  padding: none;
+  font-family: "Ubuntu";
+  margin: 5px 0px 0px 0px;
+}
+
+.card-button,
+.card-form {
+  padding-top: 10px;
+}
+.card-form {
+  display: flex;
+}
+
+.done-button {
+  background-color: var(--primary);
+  margin-right: 5px;
+}
+.remove-button {
+  background-color: var(--secondary);
+}
+
+#mainHeader {
+  text-align: center;
+  width: 100%;
+}
+
+#cardParent {
+  width: auto;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: auto;
+  height: 35vh;
+  background-color: var(--background);
+}
+#formAdd {
+  background-color: var(--background);
+  width: auto;
+  margin-bottom: 5px;
+}
+#Made {
+    text-align: end;
+}
+@media only screen and (min-width: 822px) {
+  #cardParent {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-width: 1060px) {
+  #cardParent {
+    grid-template-columns: auto auto auto;
+  }
+}
+@media only screen and (min-width: 822px) {
+  #cardParent {
+    grid-template-columns: auto auto;
+  }
+}
+@media only screen and (min-height: 756px) {
+  #cardParent {
+    height: 43vh;
+  }
+}
