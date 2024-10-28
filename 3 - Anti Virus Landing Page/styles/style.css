@@ -1,0 +1,25 @@
+:root {
+  --text: #f8fbfc;
+  --background: #060b0e;
+  --primary: #99a8c7;
+  --secondary: #c0c9de;
+  --accent: #4a5364;
+}
+body {
+  background-color: var(--background) !important;
+  color: var(--text) !important;
+}
+@layer utilities {
+  .bg-primary {
+    background-color: var(--primary); /* Biru utama untuk elemen */
+  }
+  .text-primary {
+    color: var(--primary); /* Teks utama */
+  }
+  .bg-secondary {
+    background-color: var(--secondary); /* Warna sekunder */
+  }
+  .bg-accent {
+    background-color: var(--accent); /* Warna aksen */
+  }
+}
